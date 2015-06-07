@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - haito_stadnik_galeria@cronline.pl" uuid="c71396cd-32ac-48eb-a70a-d8aac7bdb5b5">
+    <database-info product="MySQL" version="5.5.38-0+wheezy1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="haito_stadnik_galeria"/>
+    <table name="albums" schema="" catalog="haito_stadnik_galeria" type="TABLE">
+      <column name="album_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="album_name" sqlType="VARCHAR" precision="333" scale="0" nullable="false" jdbcType="12"/>
+      <column name="thumb_url" sqlType="VARCHAR" precision="999" scale="0" nullable="false" jdbcType="12"/>
+      <column name="created" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="album_id"/>
+    </table>
+    <table name="images" schema="" catalog="haito_stadnik_galeria" type="TABLE">
+      <column name="image_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="album_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="image_name" sqlType="VARCHAR" precision="333" scale="0" nullable="false" jdbcType="12"/>
+      <column name="url" sqlType="VARCHAR" precision="999" scale="0" nullable="false" jdbcType="12"/>
+      <column name="thumb_url" sqlType="VARCHAR" precision="999" scale="0" nullable="false" jdbcType="12"/>
+      <column name="added" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="image_id"/>
+    </table>
+  </data-source>
+</component>

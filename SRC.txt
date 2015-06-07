@@ -1,0 +1,2 @@
+unlink() - deletes Files
+	http://php.net/manual/en/function.unlink.php
